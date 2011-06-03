@@ -21,7 +21,9 @@ Open up `settings.py` and adjust as necessary.
     header_file = '%s%s' % (src_dir, 'header.html')
     footer_file = '%s%s' % (src_dir, 'footer.html')
 
-Easy enough.
+Then just do it. C'mon... do it.
+
+    ./cmon_doit.py
 
 
 ## Some examples
