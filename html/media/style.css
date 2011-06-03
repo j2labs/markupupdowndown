@@ -1,0 +1,76 @@
+body {
+    margin: auto;
+    font-family: Palatino;
+}
+
+body {
+    width: 600px;
+}
+
+/***
+ *** General shape of elements
+ ***/
+
+h1, h2, h3, h4, h5, p, li {
+    margin-bottom: 10px;
+}
+
+h1 { color: #000; font-size: 40pt; }
+h2 { color: #333; font-size: 22pt; }
+h3 { color: #666; font-size:18pt; }
+h4 { color: #999; font-size:15pt;}
+h5 { color: #aaa; }
+
+p {
+    color: #666;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    line-height: 150%;
+}
+
+ul, ol {
+    padding-bottom: 20px;
+    color: #666;
+}
+
+pre {
+    padding-bottom: 20px;
+}
+
+a {
+    color: #66a;
+}
+
+/***
+ *** Layout of document title
+ ***/
+
+h1.title {
+    text-align: center;
+    /*height: 70px;*/
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+h4.title {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin: 0px;
+    margin-left: 150px;
+}
+
+h5.title {
+    text-align: center;
+    font-style: italic;
+    margin: 0px;
+    margin-left: 250px;
+}
+
+p.links {
+    color: #000;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 0px;
+}

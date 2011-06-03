@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>ScaleDB: </title>
+    <link rel=stylesheet type=text/css href="media/style.css"> 
+    <link rel=stylesheet type=text/css href="media/prettify.css"> 
+    <script type="text/javascript" src="js/prettify.js"></script>
+  </head>
+
+  <body onload="prettyPrint()">
+    <h1 class="title">Markupupdowndown</h1>
+    <h4 class="title">...simple html generation</h4>
+    <h5 class="title">by J2 Labs!</h5>
+
+    <p class="links"><a href="readme.html">README</a> // <a href="license.html">LICENSE</a></p>
+
+<p>Markupupdowndown is a ridiculous name for a simple script. It translates the markdown found in you <code>src</code> directory into html and puts it in your <code>html</code> directory using Trent Mick's <a href="https://github.com/trentm/python-markdown2">markdown2</a> library. </p>
+
+<p>The code is available here: <a href="https://github.com/j2labs/markupupdowndown">https://github.com/j2labs/markupupdowndown</a>.</p>
+
+<h2>Markdown2</h2>
+
+<p>To install <code>markdown2</code>, use the command below.</p>
+
+<pre><code class="prettyprint">pip install markdown2
+</code></pre>
+
+<h2>Using it</h2>
+
+<p>Open up <code>settings.py</code> and adjust as necessary.</p>
+
+<pre><code class="prettyprint">src_dir = './src/'
+html_dir = './html/'
+header_file = '%s%s' % (src_dir, 'header.html')
+footer_file = '%s%s' % (src_dir, 'footer.html')
+</code></pre>
+
+<p>Easy enough.</p>
+
+<h2>Some examples</h2>
+
+<p>How about some headers??</p>
+
+<h3>Header3</h3>
+
+<p>Some text </p>
+
+<h4>Header4</h4>
+
+<p>Some text </p>
+
+<h5>Header5</h5>
+
+<p>Some text </p>
+
+<h6>Header6</h6>
+
+<p>And maybe a list?</p>
+
+<ul>
+<li>bullet point a</li>
+<li>bullet point b</li>
+<li>bullet point c</li>
+</ul>
+
+<p>And a numbered list?</p>
+
+<ol>
+<li>hi</li>
+<li>hi</li>
+<li>hi</li>
+<li>hi</li>
+<li>hi</li>
+</ol>
+
+<p>Sweet.</p>
+
+<h2>License</h2>
+
+<p>BSD, as usual</p>
+
+  </body>
+</html>
