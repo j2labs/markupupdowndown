@@ -14,7 +14,8 @@ To install `markdown2`, use the command below.
 
 ## Using it
 
-Open up `settings.py` and adjust as necessary.
+Create your config by putting the following lines in an `upupdowndown.py` and
+adjust as necessary.
 
     src_dir = './src/'
     html_dir = './html/'
