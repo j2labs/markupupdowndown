@@ -19,7 +19,7 @@ import markdown2
 import fnmatch
 import os
 
-from settings import header_file, footer_file, src_dir, html_dir
+from upupdowndown import header_file, footer_file, src_dir, html_dir
 
 ### Documentation themes are *just* headers and footers
 header_data = open(header_file, 'r').read()
@@ -32,7 +32,7 @@ for filename in os.listdir(src_dir):
         file_path = '%s%s' % (src_dir, filename)
         
         fd = open(file_path, 'r')
-        fd.readline() # ignore first line
+        #fd.readline() # ignore first line
         data = fd.read()
         fd.close()
         
