@@ -18,8 +18,12 @@ project requirements file. If you need to install it, use this:
 import markdown2
 import fnmatch
 import os
+import sys
 
+# We want to search './' for the upupdowndown file
+sys.path.insert(0, '.')
 from upupdowndown import header_file, footer_file, src_dir, html_dir
+
 
 ### Documentation themes are *just* headers and footers
 header_data = open(header_file, 'r').read()
