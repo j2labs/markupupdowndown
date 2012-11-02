@@ -49,9 +49,12 @@ for filename in os.listdir(src_dir):
         # Change <pre><code> to use prettify javascript
         marked_up = marked_up.replace('<pre><code>',
                                       '<pre><code class="prettyprint">')
-        
+
+        # Change <body> to <body id="filename">
+        header_data = header_data.replace('<body>',
+                                          '<body id="%s">' % (new_filename))
+
         html_filepath = '%s%s.html' % (html_dir, new_filename)
-        print '   writing:', html_filepath
 
         rendered_fd = open(html_filepath, 'w')
         rendered_fd.write(header_data)
@@ -59,3 +62,5 @@ for filename in os.listdir(src_dir):
         rendered_fd.write(footer_data)
         rendered_fd.close()
     
+        header_data = header_data.replace('<body id="%s">' % (new_filename),
+                                          '<body>')
